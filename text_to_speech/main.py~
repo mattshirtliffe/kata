@@ -1,0 +1,6 @@
+
+import requests
+
+url= 'http://tts-api.com/tts.mp3?q="He is a cunt"'
+r = requests.get(url)
+res =  r.text
