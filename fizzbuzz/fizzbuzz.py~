@@ -1,0 +1,24 @@
+
+
+def fizz_buzz(a_string):
+
+    for i in range(0,100):
+        fizzy_bizzy = ""
+        
+        if i % 3 == 0:
+            fizzy_bizzy = "Fizz"
+        if i % 5 == 0:
+            fizzy_bizzy = "Buzz"
+        
+        if i % 3 == 0 and i % 5 == 0:
+            fizzy_bizzy = "FizzBuzz"
+
+
+
+
+print count
+
+    
+
+if __name__ == "__main__":
+    print number_of_vowels("piiiiiig")
