@@ -1,0 +1,5 @@
+from fizz_buzz inmport fizz_buzzy
+import unittest
+
+
+class TestFizzyBuzzy(unittest.TestCase)
