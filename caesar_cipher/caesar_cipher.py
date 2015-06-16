@@ -1,12 +1,12 @@
 import string
 import collections
 
-def cipher(shift,word):
+def cipher(offset,word):
     alpha = string.ascii_lowercase    
     d = collections.deque([],len(alpha))
     for i in alpha:
         d.append(i)
-    d.rotate(shift)
+    d.rotate(offset)
     alpha = list(alpha)
     d = list(d)
     
