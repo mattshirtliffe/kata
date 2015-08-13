@@ -1,12 +1,13 @@
 import string
 import collections
 
-def cipher(offset,word):
-    alpha = string.ascii_lowercase    
+def rot13(word):
+    
+    alpha = string.ascii_lowercase + string.ascii_uppercase
     d = collections.deque([],len(alpha))
     for i in alpha:
         d.append(i)
-    d.rotate(offset)
+    d.rotate(13)
     alpha = list(alpha)
     d = list(d)
     
@@ -17,5 +18,5 @@ def cipher(offset,word):
 
 
 if __name__ == "__main__":
-    print cipher(-13,'abcdefghijklmnopqrstuvwxyz')
+    print rot13('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz')
     
